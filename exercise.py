@@ -10,23 +10,23 @@ import local as lcl
 
 
 def demand(price, a, b):
-""" Function describing the quantity of supply.
-:param price: price of the product
-:param a: demand cutoff price
-:param b: tangent of the angle of inclination
-:return: quantity_demand"""
-    
+    """ Function describing the quantity of supply.
+    :param price: price of the product
+    :param a: demand cutoff price
+    :param b: tangent of the angle of inclination
+    :return: quantity_demand
+    """
     quantity_demand = a - b * price
     return quantity_demand
 
 
 def supply(price, c, d):
-""" Function describing the quantity of supply.
-:param price: price of the product
-:param c: minimum supply
-:param d: tangent of the angle of inclination
-:return: quantity_supply """
-    
+    """ Function describing the quantity of supply.
+    :param price: price of the product
+    :param c: minimum supply
+    :param d: tangent of the angle of inclination
+    :return: quantity_supply
+    """
     quantity_supply = c - d * price
     return quantity_supply
 
