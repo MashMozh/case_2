@@ -1,16 +1,13 @@
-#Фунция спроса и предложения товара заданны уравнениями Qd=300- P
-# Qs= P/2 - 30. Государство установило налог в размере 15 д.ед за единицу товара
-# Налог уплачивает покупатель. Определите параметры начального равновесия
-# Равновесия после налога, изменение выигрышей покупателей и продавцов
-# Налоговые поступления и чистые потери общества ( задача 1.26)
-#Вводим значения коэффицентов
+# Part of a case-study #2: Microeconomics
+# Developers: Lagoda K., Pinoeva K., Zheravina N., Mozhitseva M.
 
 
 import local as lcl
 
 
 def demand(price, a, b):
-    """ Function describing the quantity of supply.
+    """Function describing the quantity of supply.
+    
     :param price: price of the product
     :param a: demand cutoff price
     :param b: tangent of the angle of inclination
@@ -21,7 +18,8 @@ def demand(price, a, b):
 
 
 def supply(price, c, d):
-    """ Function describing the quantity of supply.
+    """Function describing the quantity of supply.
+   
     :param price: price of the product
     :param c: minimum supply
     :param d: tangent of the angle of inclination
@@ -102,4 +100,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
